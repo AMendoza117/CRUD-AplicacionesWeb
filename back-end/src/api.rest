@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/autos
+
+
+###
+post http://localhost:3000/autos
+Content-Type: application/json
+
+{
+    "marca":"BMW",
+    "modelo":"320",
+    "precio":530000,
+    "transmision":"Automatica",
+    "accesorios":"Bocinas, TV"
+}
+
+###
+GET http://localhost:3000/autos/6
+
+###
+DELETE http://localhost:3000/autos/7
+
+###
+PUT http://localhost:3000/autos/3
+Content-Type: application/json
+
+{
+    "accesorios":"Widebody",
+    "precio":650000
+}
